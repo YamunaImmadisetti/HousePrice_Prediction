@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+</head>
+<body>
+    <h1>House Price Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="MedInc">Median Income ($1000s):</label>
+        <input type="text" id="MedInc" name="MedInc" required><br><br>
+        
+        <label for="HouseAge">House Age (years):</label>
+        <input type="text" id="HouseAge" name="HouseAge" required><br><br>
+        
+        <label for="AveRooms">Average Rooms:</label>
+        <input type="text" id="AveRooms" name="AveRooms" required><br><br>
+        
+        <label for="AveOccup">Average Occupants:</label>
+        <input type="text" id="AveOccup" name="AveOccup" required><br><br>
+        
+        <label for="Latitude">Latitude:</label>
+        <input type="text" id="Latitude" name="Latitude" required><br><br>
+        
+        <label for="Longitude">Longitude:</label>
+        <input type="text" id="Longitude" name="Longitude" required><br><br>
+        
+        <label for="TotalRooms">Total Rooms:</label>
+        <input type="text" id="TotalRooms" name="TotalRooms" required><br><br>
+
+        <!-- Add additional fields if necessary -->
+        <label for="Population">Population:</label>
+        <input type="text" id="Population" name="Population" required><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+    
+    <h2>{{ prediction }}</h2>
+</body>
+</html>
